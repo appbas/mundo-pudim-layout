@@ -28,6 +28,10 @@
     --color: #5b5d5e;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 section {
     padding: 50px 20%;
 }
@@ -199,17 +203,29 @@ section.cardapio {
     position: relative;
     // border: .005rem solid var(--second-color);
     border-radius: .2rem;
-    padding: .5rem;
-    width: 270px;
-    height: 250px;
+    // padding: .5rem;
+    width: 300px;
+    height: 270px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: #fff;
-    
     transition: all .3s;
+
+    & > .card-img {
+        display: flex;
+        width: 100%;
+        height: 40%;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+        background: var(--data-img) no-repeat;
+        background-position-y: -5rem;
+        background-size: cover;
+    }
+    
     & > .card-title {
         text-transform: uppercase;
         font-weight: 700;
-        color: var(--primary-color)
+        color: var(--primary-color);
+        padding: .5rem;
     }
 
     & > .card-content {
@@ -217,6 +233,7 @@ section.cardapio {
         position: relative;
         height: calc(100% - 10.5rem);
         font-size: .8rem;
+        padding: .5rem;
 
         & > img {
             position: absolute;
@@ -257,17 +274,14 @@ section.cardapio {
         width: 100%;
         height: 3rem;
         gap: .3rem;
+        padding: .5rem;
     }
 
     img {
         width: auto;
     }
 
-    & .card-image {
-        width: 50%;
-        border: 1px solid transparent;
-        border-radius: 1rem;
-    }
+
 }
 
 .container-cards {
