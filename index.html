@@ -15,7 +15,7 @@
       >
       <div id="menu-icon" class="bx bx-menu"></div>
 
-      <nav>
+      <nav class="menu">
         <ul class="navbar">
           <li><a href="#home">Inicio</a></li>
           <li><a href="#cardapio">Cardápio</a></li>
@@ -24,6 +24,14 @@
         </ul>
       </nav>
     </header>
+    <nav class="menu-mobile shadow" style="display: none !important">
+      <ul class="navbar-mobile">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+    </nav>
 
     <section class="home" id="home">
       <div class="home-text">
@@ -34,10 +42,13 @@
           eius! Rem labore quisquam maxime, optio architecto similique fuga
           saepe aliquid id, dicta accusamus, sequi quam itaque iste eum et amet!
         </p>
-        <a class="btn" href="#">Nosso cardapio</a>
+        <a class="btn" href="#cardapio">Nosso cardapio</a>
       </div>
       <div class="home-img">
-        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121753_U4YU_i.jpg" alt="Pudim em um prato" />
+        <img
+          src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121753_U4YU_i.jpg"
+          alt="Pudim em um prato"
+        />
       </div>
     </section>
 
@@ -45,11 +56,61 @@
       <h1>Cardápio</h1>
       <div class="container-cards">
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121753_U4YU_i.jpg)">
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121753_U4YU_i.jpg);
+            "
+          ></div>
+          <div class="card-title">TRADICIONAL INDIVIDUAL (1k)</div>
+          <div class="card-content">
+            O Clássico pudim tradicional tamanho FAMÍLIA! Aquele sabor que
+            remete a memórias em família.
           </div>
+          <div class="card-footer">
+            <a
+              class="btn-card btn-whats"
+              href="https://api.whatsapp.com/send/?phone=556174018351&text=Gostaria%20de%20pedir%20o%20melhor%20pudim%20do%20mundo!&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <img
+                src="assets/whatsapp-icone-2.png"
+                alt=""
+                height="24"
+                width="24"
+                srcset=""
+              />
+              Whatsapp
+            </a>
+            <a
+              class="btn-card btn-ifood"
+              href="https://www.ifood.com.br/delivery/brasilia-df/mundo-pudim-ponte-alta-norte-gama/13b333f6-4c52-4a60-a131-353b7f3a58bc?prato=69956470-f180-4d37-b42e-2506fb345391"
+              target="_blank"
+            >
+              <img
+                src="https://static.ifood.com.br/webapp/images/logo-smile-128x128.png"
+                alt=""
+                height="24"
+                width="24"
+                srcset=""
+              />
+              Ifood
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121753_U4YU_i.jpg);
+            "
+          ></div>
           <div class="card-title">TRADICIONAL INDIVIDUAL (130G)</div>
           <div class="card-content">
-            O Clássico pudim tradicional! Aquele sabor que remete a memórias em família.
+            O Clássico pudim tradicional! Aquele sabor que remete a memórias em
+            família.
           </div>
           <div class="card-footer">
             <a
@@ -84,8 +145,13 @@
         </div>
 
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121751_CD02_i.jpg)">
-          </div>
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121751_CD02_i.jpg);
+            "
+          ></div>
           <div class="card-title">PUDIM DE CAFÉ INDIVIDUAL (130G)</div>
           <div class="card-content">
             Feito com café L'Or. Um sabor incrível para quem gosta de café!
@@ -123,8 +189,13 @@
         </div>
 
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121800_X4G3_i.jpg)">
-          </div>
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121800_X4G3_i.jpg);
+            "
+          ></div>
           <div class="card-title">PUDIM DE NUTELLA INDIVIDUAL (130G)</div>
           <div class="card-content">
             O queridinho! O autêntico sabor Nutella!
@@ -162,11 +233,19 @@
         </div>
 
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305131021_ktCI_i.jpg)">
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305131021_ktCI_i.jpg);
+            "
+          ></div>
+          <div class="card-title">
+            PUDIM DE LAKA COM FRUTAS VERMELHAS INDIVIDUAL (130G)
           </div>
-          <div class="card-title">PUDIM DE LAKA COM FRUTAS VERMELHAS INDIVIDUAL (130G)</div>
           <div class="card-content">
-            Feito com chocolate branco laka e uma calda deliciosa de frutas vermelhas.
+            Feito com chocolate branco laka e uma calda deliciosa de frutas
+            vermelhas.
           </div>
           <div class="card-footer">
             <a
@@ -201,9 +280,16 @@
         </div>
 
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121801_UH05_i.jpg)">
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_low/pratos/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305121801_UH05_i.jpg);
+            "
+          ></div>
+          <div class="card-title">
+            PUDIM DE NINHO COM NUTELLA INDIVIDUAL (130G)
           </div>
-          <div class="card-title">PUDIM DE NINHO COM NUTELLA INDIVIDUAL (130G)</div>
           <div class="card-content">
             Aquela combinação que faz sucesso: Leite Ninho com calda de Nutella.
           </div>
@@ -240,11 +326,17 @@
         </div>
 
         <div class="card">
-          <div class="card-img" data-color="blue" style="--data-img: url(https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305131021_ktCI_i.jpg)">
-          </div>
+          <div
+            class="card-img"
+            data-color="blue"
+            style="
+              --data-img: url(https://static.ifood-static.com.br/image/upload/t_thumbnail/logosgde/13b333f6-4c52-4a60-a131-353b7f3a58bc/202305131021_ktCI_i.jpg);
+            "
+          ></div>
           <div class="card-title">PUDIM TRADICIONAL FAMÍLIA (1,1KG)</div>
           <div class="card-content">
-            1,1kg de pudim tradicional! Serve até 8 pessoas, fatias generosas. Ideal para momentos em família. Uma sobremesa irresistível!
+            1,1kg de pudim tradicional! Serve até 8 pessoas, fatias generosas.
+            Ideal para momentos em família. Uma sobremesa irresistível!
           </div>
           <div class="card-footer">
             <a
@@ -277,7 +369,6 @@
             </a>
           </div>
         </div>
-        
       </div>
     </section>
     <section class="quem-somos" id="quem-somos">

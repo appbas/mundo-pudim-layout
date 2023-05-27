@@ -12,3 +12,20 @@ document.addEventListener("scroll", (event) => {
   }
 
 });
+
+var open = false;
+const menuIcon = document.getElementById('menu-icon');
+const menuMobile  = document.getElementsByClassName('menu-mobile').item(0);
+
+menuMobile.style = 'display: none !important';
+
+menuIcon.addEventListener("click", (event) => {
+  open = !open;
+  console.log(open);
+  console.log(menuMobile);
+  if (open) {
+    menuMobile.style = 'display: flex';
+  } else {
+    menuMobile.style = 'display: none !important';
+  }
+});

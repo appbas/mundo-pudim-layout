@@ -45,7 +45,7 @@ header {
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,6 +57,8 @@ header {
     background-color: rgb(255, 255, 255, .35);
     backdrop-filter: blur(50px);
     box-shadow: rgba(var(--second-color-rgb), 0.5) 2px 2px 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -323,8 +325,56 @@ section.quem-somos {
     }
 }
 
+nav.menu {
+    display: block;
+}
+
+.menu-mobile {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 6.5%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
+    background-color: #502c22;
+    box-shadow: rgba(var(--second-color-rgb), 0.5) 2px 2px 5px;
+}
+
+.navbar-mobile {
+    padding: .3rem;
+    & > li {
+        & > a {
+            display: block;
+
+            width: 100%;
+            color: #FFF;
+            padding: 1rem;
+            &:hover {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+}
 
 
+@media (max-width: 768px) {
+    nav.menu {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block !important;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    header {
+        padding: 1% 5%;
+    }
+  }
 
 
 
